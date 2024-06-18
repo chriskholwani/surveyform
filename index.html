@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+<body>
+  <h1 id="title">Public Transportation</h1>
+  <h2>Transport usage, satisfaction and
+areas for improvement</h2>
+  <p id="description">This survey aims to gather insights on transport usage, satisfaction levels, and potential areas for improvement to enhance transportation services.</p>
+<form id="survey-form">
+<div class="menu">
+<fieldset >
+  <label class="personalinfo" id="name-label">Name:</label><input id="name" type="text" placeholder="Name..." class="info" required></input>
+  <label class="personalinfo" id="email-label">Email:</label>
+    <input id="email" type="email" class="info" placeholder="Email..." required></input>
+  <label class="personalinfo"  id="number-label">Age:</label><input id="number" type="number" placeholder="Number..." min="0" max="100" class="info" required></input>
+  <label>Gender:</label>
+  <select id="dropdown">
+    <option>Gender:</option>
+    <option>Female</option>
+    <option>Male</option>
+    <option>Prefer not to say</option>
+  </select>
+  <h3>Occupation</h3>
+  <label class="Type"><input class="Occupation" type="radio" name="occupation" value="student"> Student</label>
+  <label class="Type"><input class="Occupation" type="radio" name="occupation" value="employed"> Employed</label>
+  <label class="Type"><input class="Occupation" type="radio" name="occupation" value="self-employed"> Self-employed</label>
+  <label class="Type"><input class="Occupation" type="radio" name="occupation" value="unemployed"> Unemployed</label>
+  <label class="Type"><input class="Occupation" type="radio" name="occupation" value="retired"> Retired</label>
+<h3>Mode of transport</h3>
+  <label><input value="car" type="checkbox"></input> Car</label>
+  <label><input value="bus" type="checkbox"></input> Bus</label>
+  <label><input value="Train" type="checkbox"></input> Train</label>
+  <label><input value="Walking" type="checkbox"></input> Walking</label>
+  <label><input value="taxi" type="checkbox"></input> Taxi</label>
+  <h3>What improvements would you like to see in the transport services?</h3>
+    <textarea rows="10" cols="80" placeholder="Please share any additional comments on your transport usage, satisfaction and how to improve it..."></textarea>
+
+  </fieldset>
+  <button id="submit" class="container" type="submit" >Submit</button>
